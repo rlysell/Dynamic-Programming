@@ -6,4 +6,6 @@ def Fib(x, memo = {}):
     memo[x] = Fib(x - 1, memo) + Fib(x - 2, memo)
     return memo[x]
 
-print(Fib(50))
+
+sol = Fib(int(input("Choose value: ")))
+print(f"Fibonacci value is {sol}")
