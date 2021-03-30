@@ -24,7 +24,7 @@ int main(){
     long double sol = Fibonacci (x, map);
     std::clock_t end = std::clock ();
     std::cout << "The " << x << "th number in the Fibonacci sequence is " << sol << std::endl;
-    std::cout << "And it took " << std::fixed << 1.0 / 1000 * (end - start) << std::setprecision (20) << " seconds\n";
+    std::cout << "And it took " << std::fixed << 1.0 / 1000 * (end - start) << std::setprecision (20) << " seconds to calculate\n";
     
     return 0;
 }

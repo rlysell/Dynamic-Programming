@@ -1,3 +1,6 @@
+import time
+
+
 def Fib(x, memo = {}):
     if x in memo:
         return memo[x]
@@ -6,6 +9,8 @@ def Fib(x, memo = {}):
     memo[x] = Fib(x - 1, memo) + Fib(x - 2, memo)
     return memo[x]
 
-
-sol = Fib(int(input("Choose value: ")))
-print(f"Fibonacci value is {sol}")
+time_start = time.time()
+inp = int(input("Choose value: "))
+sol = Fib(inp)
+print(f"The {inp}th Fibonacci value is {float(sol)}")
+print(f"And it took {time.time()-time_start:.3f} seconds to calculate")
