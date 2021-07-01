@@ -1,5 +1,6 @@
 from turtle import *
-
+hideturtle()
+color('blue')
 
 def draw_snowflake_side(size, levels):
     if levels == 0:
@@ -21,14 +22,12 @@ def draw_snowflakes(size, levels, sides):
 
 if __name__ == '__main__':  
     speed(0)
-    size = 300.0
-    levels = 3
+    size = 400.0
+    levels = 4
     sides = 3
     
     penup()
-
-    backward(size / 2.0)
-
+    goto(-size / 2.0, size / 3.0)
     pendown()
 
     draw_snowflakes(size, levels, sides)
