@@ -32,5 +32,5 @@ int main(){
     return 0;
 }
 
-// Without catche O(n^maxweight)
+// Without catche O(2^n)
 // With catche O(n*maxweight)
