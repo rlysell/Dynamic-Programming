@@ -12,17 +12,18 @@ def Can_construct(TargetWord, wordbank, memo = {}):
     memo[TargetWord] = False
     return False
 
-print(Can_construct("abcdef", ["ab", "abc", "cd", "def", "abcd"]))
-print(Can_construct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
+if __name__ == "__main__":
+    print(Can_construct("abcdef", ["ab", "abc", "cd", "def", "abcd"]))
+    print(Can_construct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
 
-print(Can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", 
-["ee", 
-"eee", 
-"eeee", 
-"eeeee", 
-"eeeeee", 
-"eeeeeee", 
-"eeeeeeee"]))
+    print(Can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", 
+    ["ee", 
+    "eee", 
+    "eeee", 
+    "eeeee", 
+    "eeeeee", 
+    "eeeeeee", 
+    "eeeeeeee"]))
 
 
 

@@ -10,8 +10,9 @@ def grid(x, y, memo = {}):
     memo[(x, y)] =  grid(x - 1, y) + grid(x, y - 1)
     return memo[(x, y)]
 
-n = int(input("Number of rows: "))
-m = int(input("Number of columns: "))
-start = time.time()
-print(f"Number of possible routes: {float(grid(n, m))}")
-print(f"Coumputed in {time.time()-start:.2f} seconds")
+if __name__=="__main__":
+    n = int(input("Number of rows: "))
+    m = int(input("Number of columns: "))
+    start = time.time()
+    print(f"Number of possible routes: {float(grid(n, m))}")
+    print(f"Coumputed in {time.time()-start:.2f} seconds")
